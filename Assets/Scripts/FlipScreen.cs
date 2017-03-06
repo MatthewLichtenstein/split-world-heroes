@@ -30,14 +30,28 @@ public class FlipScreen : MonoBehaviour {
 
         if(topScreen)
         {
-            Vector3 direction = P1Transform.position - gameObject.transform.position;
-            var distance = direction.magnitude;
-            gameObject.transform.Translate(direction/distance * Time.deltaTime);
+            if(P1Transform)
+            {
+                Vector3 direction = P1Transform.position - gameObject.transform.position;
+                var distance = direction.magnitude;
+                gameObject.transform.Translate(direction/distance * Time.deltaTime);
+            }
         } else
         {
-            Vector3 direction = P2Transform.position - gameObject.transform.position;
-            var distance = direction.magnitude;
-            gameObject.transform.Translate(direction / distance * Time.deltaTime);
+            if(P2Transform)
+            {
+                Vector3 direction = P2Transform.position - gameObject.transform.position;
+                var distance = direction.magnitude;
+                gameObject.transform.Translate(direction / distance * Time.deltaTime);
+            }
         }
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.root.GetComponent<Player1>() || other.transform.root.GetComponent<Player2>())
+        {
+            Destroy(other.transform.gameObject);
+        }
+    }
 }
