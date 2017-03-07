@@ -13,7 +13,7 @@ public class FlipScreen : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        topScreen = true;
+        
     }
 
     // Update is called once per frame
