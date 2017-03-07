@@ -145,15 +145,6 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 361171629}
-    - target: {fileID: 114956489838657214, guid: a0f35712d033be046af1463b9497f864,
-        type: 2}
-      propertyPath: topScreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1969302875420454, guid: a0f35712d033be046af1463b9497f864, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0f35712d033be046af1463b9497f864, type: 2}
   m_IsPrefabParent: 0
@@ -580,15 +571,6 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 361171629}
-    - target: {fileID: 114675093269933210, guid: f9a8eb354482cf54dbba21bd1d576ec7,
-        type: 2}
-      propertyPath: topScreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1566582773721694, guid: f9a8eb354482cf54dbba21bd1d576ec7, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9a8eb354482cf54dbba21bd1d576ec7, type: 2}
   m_IsPrefabParent: 0
@@ -1213,10 +1195,6 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 361171629}
-    - target: {fileID: 1035959075954440, guid: eb940f5099292014fa51cb089966a6fb, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb940f5099292014fa51cb089966a6fb, type: 2}
   m_IsPrefabParent: 0
