@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114675093269933210}
   m_Layer: 0
   m_Name: GreenEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1566582773721694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.62, y: 2.09, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.52, y: 1.99, z: 0}
   m_LocalScale: {x: 0.17629719, y: 0.22580934, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cba0c9fb1156e944ad81c56e7e715ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topScreen: 0
+  topScreen: 1
   speed: 0.1
   P1Transform: {fileID: 0}
   P2Transform: {fileID: 0}
