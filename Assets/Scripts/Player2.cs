@@ -38,8 +38,7 @@ public class Player2 : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.E) && !thrown)
         {
-            instance = (GameObject)Instantiate(potion, transform.localPosition + new Vector3(0.91f, 0.59f, 0), transform.rotation, trans);
-            instance.GetComponent<Transform>().parent = trans.parent;
+            instance = (GameObject)Instantiate(potion, transform.localPosition + new Vector3(0.91f, 0.59f, 0), transform.rotation);
             instance.GetComponent<Rigidbody2D>().AddForce(new Vector2(160, 80));
             instance.GetComponent<Rigidbody2D>().gravityScale = 1;
             thrown = true;
@@ -48,7 +47,10 @@ public class Player2 : MonoBehaviour {
 
     void OnCollisionStay2D(Collision2D box)
     {
-        isGrounded = true;
+        if (box.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
     }
 
     void OnCollisionExit2D(Collision2D box)
